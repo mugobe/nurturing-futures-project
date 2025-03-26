@@ -1,83 +1,60 @@
-
 import React from 'react';
-import { HeartHandshake, School, ShieldHeart, Waypoints } from 'lucide-react';
+import { PiggyBank, BookOpen, Heart, Award } from 'lucide-react';
 import AnimatedIcon from '../shared/AnimatedIcon';
-import Card, { CardContent, CardHeader, CardTitle } from '../shared/Card';
+import Card, { CardContent, CardDescription, CardHeader, CardTitle } from '../shared/Card';
+import { cn } from '@/lib/utils';
+
+interface ImpactItem {
+  icon: React.ComponentType<any>;
+  title: string;
+  description: string;
+}
 
 const ImpactSection = () => {
-  const impactAreas = [
+  const impactItems: ImpactItem[] = [
     {
-      icon: ShieldHeart,
-      title: "Child Protection",
-      description: "We ensure children are protected from harm, exploitation, and abuse through our comprehensive safeguarding programs.",
-      stat: "1,200+",
-      statDescription: "Children protected annually",
-      color: "bg-hope-50 text-hope-700",
-      animation: "float"
+      icon: PiggyBank,
+      title: 'Financial Transparency',
+      description: 'We ensure every donation is used effectively, providing clear reports on our financial activities.',
     },
     {
-      icon: School,
-      title: "Education",
-      description: "Our educational initiatives give marginalized children access to quality learning opportunities.",
-      stat: "24",
-      statDescription: "Schools supported",
-      color: "bg-warmth-50 text-warmth-700",
-      animation: "pulse"
+      icon: BookOpen,
+      title: 'Educational Programs',
+      description: 'We run several educational programs to help children get access to better learning opportunities.',
     },
     {
-      icon: HeartHandshake,
-      title: "Community Support",
-      description: "We strengthen communities to better care for their children through development projects.",
-      stat: "120+",
-      statDescription: "Communities engaged",
-      color: "bg-compassion-50 text-compassion-700",
-      animation: "float"
+      icon: Heart,
+      title: 'Healthcare Initiatives',
+      description: 'We provide access to essential healthcare services, ensuring children receive the medical attention they need.',
     },
     {
-      icon: Waypoints,
-      title: "Future Pathways",
-      description: "We create opportunities for youth transition to independence through skills training and mentorship.",
-      stat: "94%",
-      statDescription: "Program completion rate",
-      color: "bg-emerald-50 text-emerald-700",
-      animation: "pulse"
-    }
+      icon: Award,
+      title: 'Community Support',
+      description: 'We engage with local communities to build sustainable support systems for children and their families.',
+    },
   ];
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="section-padding">
       <div className="container-custom">
-        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-warmth-100 text-warmth-800 text-xs font-medium mb-6">
-            <AnimatedIcon icon={HeartHandshake} size={16} className="mr-1.5" animation="pulse" />
-            <span>Our Impact Areas</span>
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-            How We Make a <span className="text-hope-600">Difference</span>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-balance">
+            Our Impact
           </h2>
-          
-          <p className="text-gray-600">
-            Through our focused programs, we create meaningful and lasting change in the lives of children and their communities.
+          <p className="text-foreground/80 text-sm md:text-base mt-4">
+            See the difference we're making in the lives of children every day.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {impactAreas.map((area, index) => (
-            <Card key={index} hover className="h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {impactItems.map((item, index) => (
+            <Card key={index} className="hover-lift">
               <CardHeader>
-                <div className={`w-12 h-12 rounded-full ${area.color} flex items-center justify-center mb-4`}>
-                  <AnimatedIcon icon={area.icon} animation={area.animation as any} size={22} />
-                </div>
-                <CardTitle>{area.title}</CardTitle>
+                <AnimatedIcon icon={item.icon} size={40} color="#0da2e7" animation="float" className="mb-4" />
+                <CardTitle>{item.title}</CardTitle>
+                <CardDescription>{item.description}</CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600 mb-4">{area.description}</p>
-                <div className="mt-auto">
-                  <p className="text-2xl font-bold text-gray-900">{area.stat}</p>
-                  <p className="text-xs text-gray-500">{area.statDescription}</p>
-                </div>
-              </CardContent>
+              <CardContent></CardContent>
             </Card>
           ))}
         </div>
