@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { Heart, Menu, X } from 'lucide-react';
+import { Heart, Menu, X, LogIn } from 'lucide-react';
 import Button from '../shared/Button';
 import AnimatedIcon from '../shared/AnimatedIcon';
 
@@ -80,6 +80,12 @@ const Navbar = () => {
                 Donate
               </Button>
             </Link>
+            <Link to="/admin">
+              <Button variant="outline" size="md" className="flex items-center gap-2">
+                <LogIn size={16} />
+                Login
+              </Button>
+            </Link>
           </div>
         </nav>
 
@@ -122,6 +128,12 @@ const Navbar = () => {
                 <Link to="/donate">
                   <Button variant="primary" size="lg" className="w-full">
                     Donate
+                  </Button>
+                </Link>
+                <Link to="/admin" className="col-span-2 mt-3">
+                  <Button variant="outline" size="lg" className="w-full flex items-center justify-center gap-2">
+                    <LogIn size={18} />
+                    Login
                   </Button>
                 </Link>
               </div>

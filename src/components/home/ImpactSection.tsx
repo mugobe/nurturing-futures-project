@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { PiggyBank, BookOpen, Heart, Award } from 'lucide-react';
 import AnimatedIcon from '../shared/AnimatedIcon';
@@ -50,11 +51,19 @@ const ImpactSection = () => {
           {impactItems.map((item, index) => (
             <Card key={index} className="hover-lift">
               <CardHeader>
-                <AnimatedIcon icon={item.icon} size={40} color="#0da2e7" animation="float" className="mb-4" />
+                <AnimatedIcon 
+                  icon={item.icon} 
+                  size={40} 
+                  color="#0da2e7" 
+                  animation="float" 
+                  className="mb-4" 
+                />
                 <CardTitle>{item.title}</CardTitle>
                 <CardDescription>{item.description}</CardDescription>
               </CardHeader>
-              <CardContent></CardContent>
+              <CardContent>
+                {/* Empty content to satisfy the children requirement */}
+              </CardContent>
             </Card>
           ))}
         </div>
