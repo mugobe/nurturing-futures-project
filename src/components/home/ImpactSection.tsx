@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { PiggyBank, BookOpen, Heart, Award } from 'lucide-react';
+import { PiggyBank, BookOpen, Heart, Award, LucideIcon } from 'lucide-react';
 import AnimatedIcon from '../shared/AnimatedIcon';
 import Card, { CardContent, CardDescription, CardHeader, CardTitle } from '../shared/Card';
 import { cn } from '@/lib/utils';
 
 interface ImpactItem {
-  icon: React.ComponentType<any>;
+  icon: LucideIcon;  // Explicitly use LucideIcon type
   title: string;
   description: string;
 }
