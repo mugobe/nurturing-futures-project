@@ -18,18 +18,18 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-hope-100 text-hope-800 text-xs font-medium mb-6 animate-fade-in">
             <AnimatedIcon icon={Heart} size={16} className="mr-1.5" animation="pulse" />
-            <span>Transforming children's lives with love</span>
+            <span>Transforming children's lives with care</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance mb-6 animate-fade-in-up">
             <span className="block bg-gradient-to-r from-hope-700 to-hope-500 text-transparent bg-clip-text">
-              Brighter Futures
+              Bright Horizons Initiative
             </span>
             <span className="block mt-1">For Every Child</span>
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
-            We provide care, education, and support to marginalized children, helping them build a path to a brighter, more hopeful future.
+            We intentionally improve and impact children's lives by providing care, education, and support to marginalized children, helping them build a path to a brighter future.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
@@ -39,6 +39,7 @@ const Hero = () => {
                 Donate Now
               </Button>
             </Link>
+            
             <Link to="/volunteer">
               <Button variant="warmth" size="lg" rounded withIcon>
                 <Users size={18} className="mr-1.5" />

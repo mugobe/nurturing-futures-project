@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { PiggyBank, BookOpen, Heart, Award, LucideIcon } from 'lucide-react';
+import { Users, HeartHandshake, School, Home, LucideIcon } from 'lucide-react';
 import AnimatedIcon from '../shared/AnimatedIcon';
 import Card, { CardContent, CardDescription, CardHeader, CardTitle } from '../shared/Card';
 import { cn } from '@/lib/utils';
 
 interface ImpactItem {
-  icon: LucideIcon;  // Explicitly use LucideIcon type
+  icon: LucideIcon;
   title: string;
   description: string;
 }
@@ -14,24 +14,24 @@ interface ImpactItem {
 const ImpactSection = () => {
   const impactItems: ImpactItem[] = [
     {
-      icon: PiggyBank,
-      title: 'Financial Transparency',
-      description: 'We ensure every donation is used effectively, providing clear reports on our financial activities.',
+      icon: HeartHandshake,
+      title: 'Supporting Separated Children',
+      description: 'We advocate for family-based care through African-based research, supporting the traditional concept of a child being raised by the village.',
     },
     {
-      icon: BookOpen,
-      title: 'Educational Programs',
-      description: 'We run several educational programs to help children get access to better learning opportunities.',
+      icon: School,
+      title: 'Education Access',
+      description: 'We ensure children have access to quality education through partnerships with schools in marginalized areas.',
     },
     {
-      icon: Heart,
-      title: 'Healthcare Initiatives',
-      description: 'We provide access to essential healthcare services, ensuring children receive the medical attention they need.',
+      icon: Home,
+      title: 'Preventing Separation',
+      description: 'Through poverty alleviation, community support, and family strengthening, we work to prevent child-family separation.',
     },
     {
-      icon: Award,
-      title: 'Community Support',
-      description: 'We engage with local communities to build sustainable support systems for children and their families.',
+      icon: Users,
+      title: 'Boy Child Advocacy',
+      description: 'We provide a dedicated platform for boy children through parenting sessions and guidance towards becoming responsible adults.',
     },
   ];
 
@@ -40,10 +40,10 @@ const ImpactSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-balance">
-            Our Impact
+            How We Care
           </h2>
           <p className="text-foreground/80 text-sm md:text-base mt-4">
-            See the difference we're making in the lives of children every day.
+            Child-family separation in Africa affects millions of children. We work to address this critical issue through multiple approaches.
           </p>
         </div>
 
@@ -62,7 +62,6 @@ const ImpactSection = () => {
                 <CardDescription>{item.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                {/* Adding children to satisfy the children requirement */}
                 <div></div>
               </CardContent>
             </Card>

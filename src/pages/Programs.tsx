@@ -2,18 +2,19 @@
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { BookOpen, GraduationCap, HeartHandshake, Utensils, BarChart3, Users } from 'lucide-react';
+import { BookOpen, GraduationCap, HeartHandshake, Utensils, BarChart3, Users, PiggyBank } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Card, { CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/shared/Card';
 import AnimatedIcon from '@/components/shared/AnimatedIcon';
 import Button from '@/components/shared/Button';
+import type { LucideIcon } from 'lucide-react';
 
 // Define the program type for type safety
 interface Program {
   id: string;
   title: string;
   description: string;
-  icon: React.ElementType;
+  icon: LucideIcon;
   color: string;
 }
 
@@ -21,46 +22,46 @@ const Programs = () => {
   // Program data
   const programs: Program[] = [
     {
-      id: "education",
-      title: "Educational Support",
-      description: "Providing access to quality education, learning materials, and scholarship opportunities for underprivileged children.",
-      icon: BookOpen,
-      color: "#0da2e7"
-    },
-    {
-      id: "mentorship",
-      title: "Mentorship Program",
-      description: "Connecting children with positive role models who provide guidance, support, and inspiration.",
-      icon: GraduationCap,
-      color: "#2dc653"
-    },
-    {
-      id: "healthcare",
-      title: "Healthcare Initiatives",
-      description: "Ensuring children receive the medical care they need through check-ups, vaccinations, and health education.",
+      id: "family-separation",
+      title: "Supporting Separated Children",
+      description: "We advocate for family-based care through African-based research, supporting kinship and the traditional concept of a child being raised by the village.",
       icon: HeartHandshake,
       color: "#e74c3c"
     },
     {
-      id: "nutrition",
-      title: "Nutrition Program",
-      description: "Providing balanced meals and nutrition education to combat malnutrition and promote healthy development.",
-      icon: Utensils,
+      id: "poverty-alleviation",
+      title: "Poverty Alleviation",
+      description: "Through our family strengthening model, we provide families with sustainable income generating activities, financial literacy and vocational training.",
+      icon: PiggyBank,
       color: "#f39c12"
     },
     {
-      id: "skills",
-      title: "Skills Development",
-      description: "Teaching practical skills to prepare teenagers for future employment and self-sustainability.",
-      icon: BarChart3,
-      color: "#9b59b6"
+      id: "education",
+      title: "Education Access",
+      description: "Ensuring children have access to quality education through partnerships with schools, especially in marginalized areas.",
+      icon: BookOpen,
+      color: "#0da2e7"
     },
     {
-      id: "community",
-      title: "Community Building",
-      description: "Creating safe spaces and community centers where children can learn, play, and grow together.",
+      id: "healthcare",
+      title: "Healthcare Initiatives",
+      description: "Partnering with health centers to provide quality healthcare, reducing the burden on families and keeping children in safe environments.",
+      icon: HeartHandshake,
+      color: "#e74c3c"
+    },
+    {
+      id: "community-support",
+      title: "Community Support Programs",
+      description: "Establishing community-based support systems, including parenting classes, counseling, and childcare services.",
       icon: Users,
       color: "#3498db"
+    },
+    {
+      id: "boy-child",
+      title: "Boy Child Advocacy",
+      description: "Providing a dedicated platform for boy children through parenting sessions, camp sessions, and guidance towards becoming responsible adults.",
+      icon: GraduationCap,
+      color: "#2dc653"
     }
   ];
 
@@ -72,10 +73,10 @@ const Programs = () => {
         <section className="py-16 md:py-20">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">Our Programs</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-6">How We Care</h1>
               <p className="text-gray-600">
-                Through our diverse range of programs, we work to address the various needs of children 
-                and create lasting, positive impact in their lives.
+                At BHI, we deliver direct support to children and families, while also engaging in research, 
+                knowledge exchange, humanitarian responses, and advocacy for vulnerable children.
               </p>
             </div>
             

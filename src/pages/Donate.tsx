@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { Heart, Target, CheckCircle2, ShieldCheck, DollarSign } from 'lucide-react';
+import { Heart, Target, CheckCircle2, ShieldCheck, DollarSign, Book, Home, Users } from 'lucide-react';
 import AnimatedIcon from '@/components/shared/AnimatedIcon';
 import Button from '@/components/shared/Button';
 import Card, { CardContent, CardHeader, CardTitle } from '@/components/shared/Card';
@@ -58,24 +58,24 @@ const Donate = () => {
 
   const impactItems = [
     {
-      amount: "$25",
-      description: "Provides school supplies for a child for one month",
-      icon: Target
+      amount: "Basic Needs",
+      description: "Provide essentials like food and clean water, giving children a chance to live healthier and happier lives.",
+      icon: Home
     },
     {
-      amount: "$50",
-      description: "Provides nutritious meals for a child for two weeks",
+      amount: "Education",
+      description: "Open doors to education, empowering children to break the cycle of poverty and build a brighter future.",
+      icon: Book
+    },
+    {
+      amount: "Health",
+      description: "Ensure vulnerable children and families receive the medical care and mental health support they need to thrive.",
       icon: Heart
     },
     {
-      amount: "$100",
-      description: "Supports healthcare needs for a child for one month",
-      icon: ShieldCheck
-    },
-    {
-      amount: "$250",
-      description: "Covers educational expenses for a child for one term",
-      icon: CheckCircle2
+      amount: "Community",
+      description: "Support community development that fosters economic growth and social stability for vulnerable families.",
+      icon: Users
     }
   ];
 
@@ -90,15 +90,15 @@ const Donate = () => {
             <div className="max-w-3xl">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-hope-100 text-hope-800 text-xs font-medium mb-6 animate-fade-in">
                 <AnimatedIcon icon={Heart} size={16} className="mr-1.5" animation="pulse" />
-                <span>Make a Donation</span>
+                <span>Support BHI</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
-                Support Our <span className="text-hope-600">Mission</span>
+                Support <span className="text-hope-600">Bright Horizons Initiative</span>
               </h1>
               
               <p className="text-xl text-gray-600 animate-fade-in">
-                Your donation helps us provide care, education, and support to marginalized children.
+                At Bright Horizons Initiative, our mission is to intentionally improve and impact children's lives. Your donation can make a world of difference.
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Donate = () => {
             <div className="text-center max-w-2xl mx-auto mb-12">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-warmth-100 text-warmth-800 text-xs font-medium mb-6">
                 <Target size={16} className="mr-1.5" />
-                <span>Your Impact</span>
+                <span>Why Donate to BHI?</span>
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
@@ -118,7 +118,7 @@ const Donate = () => {
               </h2>
               
               <p className="text-gray-600">
-                Every contribution, no matter the size, helps us create brighter futures for children in need.
+                Your contribution helps ensure that vulnerable children have access to the resources they need to thrive.
               </p>
             </div>
             
@@ -140,12 +140,12 @@ const Donate = () => {
             
             <div className="text-center">
               <p className="text-gray-600 max-w-2xl mx-auto mb-4">
-                We're committed to transparency and efficiency in how we use your donations. 98% of all donations go directly to our programs supporting children.
+                "Live by Example: Share with vulnerable children to set a positive example. Compassion is a powerful way to support society and make a meaningful difference."
               </p>
               
               <div className="inline-flex items-center px-4 py-2 rounded-lg bg-hope-50 text-hope-700 text-sm font-medium">
                 <ShieldCheck size={18} className="mr-2" />
-                <span>We're proud to maintain a four-star rating for financial accountability.</span>
+                <span>Leave a gift for the world - include charity funding in your will to save countless lives.</span>
               </div>
             </div>
           </div>

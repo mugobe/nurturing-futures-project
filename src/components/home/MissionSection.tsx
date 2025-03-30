@@ -49,7 +49,7 @@ const MissionSection = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-hope-100 text-hope-800 text-xs font-medium mb-6">
               <AnimatedIcon icon={Heart} size={16} className="mr-1.5" animation="pulse" />
-              <span>Our Mission</span>
+              <span>How We Work</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance leading-tight">
@@ -57,30 +57,30 @@ const MissionSection = () => {
             </h2>
             
             <p className="text-gray-600 mb-8">
-              We believe every child deserves love, care, education, and the opportunity to reach their full potential. Our mission is to provide marginalized children with the support they need to build brighter futures.
+              We deliver direct support to children and families, as well as engage in research, knowledge exchange, humanitarian responses, and advocacy. We collaborate with civil society organizations (CSOs) and government bodies aligned with our mission to ensure comprehensive support for vulnerable children and families.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
               {[
                 {
                   icon: Home,
-                  title: 'Safe Homes',
-                  description: 'Providing safe living environments for displaced children.'
+                  title: 'Family Support',
+                  description: 'Preventing child-family separation through poverty alleviation and support programs.'
                 },
                 {
                   icon: School,
-                  title: 'Education',
-                  description: 'Supporting educational opportunities for marginalized children.'
+                  title: 'Education Access',
+                  description: 'Ensuring children have access to quality education through partnerships with schools.'
                 },
                 {
                   icon: Heart,
                   title: 'Healthcare',
-                  description: 'Ensuring access to essential health services and nutrition.'
+                  description: 'Providing access to essential health services and nutrition for vulnerable children.'
                 },
                 {
                   icon: Book,
-                  title: 'Life Skills',
-                  description: 'Teaching essential skills for independence and growth.'
+                  title: 'Research & Advocacy',
+                  description: 'Conducting research and advocating for policies that protect vulnerable children.'
                 }
               ].map((item, index) => (
                 <div key={index} className="flex items-start">
