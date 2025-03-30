@@ -12,6 +12,8 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import Campaigns from "./pages/Campaigns";
+import Programs from "./pages/Programs";
+import ProgramDetail from "./pages/ProgramDetail";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/campaigns" element={<Campaigns />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/programs/:id" element={<ProgramDetail />} />
           <Route path="/admin" element={<Admin />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
