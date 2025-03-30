@@ -43,7 +43,7 @@ const ImpactSection = () => {
             How We Care
           </h2>
           <p className="text-foreground/80 text-sm md:text-base mt-4">
-            Child-family separation in Africa affects millions of children. We work to address this critical issue through multiple approaches.
+            Child-family separation in Africa affects millions of children. An estimated 35 million children are without parental care across the continent. We work to address this critical issue through multiple approaches.
           </p>
         </div>
 

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -146,6 +145,81 @@ const Donate = () => {
               <div className="inline-flex items-center px-4 py-2 rounded-lg bg-hope-50 text-hope-700 text-sm font-medium">
                 <ShieldCheck size={18} className="mr-2" />
                 <span>Leave a gift for the world - include charity funding in your will to save countless lives.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Project Overview Section */}
+        <section className="py-12 md:py-20 bg-gray-50">
+          <div className="container-custom">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6 text-center">Project Overview</h2>
+              <div className="bg-white rounded-xl p-8 shadow-sm">
+                <p className="text-gray-700 mb-6">
+                  We are seeking funding for our initiative which aims to support, hear, and provide opportunities for 500 vulnerable children to thrive through advocacy, prevention, and holistic support. Our goal is to break the cycle of child institutionalization and family separation by creating nurturing, risk-free environments.
+                </p>
+                
+                <h3 className="text-xl font-semibold mb-4">Statement of Need</h3>
+                <p className="text-gray-700 mb-6">
+                  In Uganda, particularly in underserved and remote areas, many children lack access to quality education and essential resources, putting them at risk of child labor and family separation. This gap significantly affects their future opportunities and overall well-being. Bright Horizons Initiative Limited addresses this critical need by offering targeted support to the most vulnerable children.
+                </p>
+                
+                <h3 className="text-xl font-semibold mb-4">Budget Breakdown</h3>
+                <div className="overflow-x-auto mb-6">
+                  <table className="min-w-full bg-white">
+                    <thead className="bg-gray-50">
+                      <tr>
+                        <th className="py-3 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
+                        <th className="py-3 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Target</th>
+                        <th className="py-3 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cost</th>
+                        <th className="py-3 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time Frame</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      <tr>
+                        <td className="py-3 px-4">Administrative costs</td>
+                        <td className="py-3 px-4">Lump sum</td>
+                        <td className="py-3 px-4">$50,000</td>
+                        <td className="py-3 px-4">5 years</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4">Workshops</td>
+                        <td className="py-3 px-4">10</td>
+                        <td className="py-3 px-4">$20,000</td>
+                        <td className="py-3 px-4">5 years</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4">Basic supplies</td>
+                        <td className="py-3 px-4">Lump sum</td>
+                        <td className="py-3 px-4">$100,000</td>
+                        <td className="py-3 px-4">5 years</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4">Mapping Residential care facilities</td>
+                        <td className="py-3 px-4">5</td>
+                        <td className="py-3 px-4">$1,900</td>
+                        <td className="py-3 px-4">3 years</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4">Salaries</td>
+                        <td className="py-3 px-4">7</td>
+                        <td className="py-3 px-4">$17,900</td>
+                        <td className="py-3 px-4">5 years</td>
+                      </tr>
+                      <tr className="bg-gray-50 font-semibold">
+                        <td className="py-3 px-4">Total</td>
+                        <td className="py-3 px-4"></td>
+                        <td className="py-3 px-4">$189,800</td>
+                        <td className="py-3 px-4"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <p className="text-gray-700">
+                  Other Funding Sources: We are also approaching the Ashworth Charitable Trust and Dubai Cares to secure additional support for this project.
+                </p>
               </div>
             </div>
           </div>
@@ -371,6 +445,7 @@ const Donate = () => {
                               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-hope-500 focus:border-hope-500"
                             >
                               <option value="">Select Country</option>
+                              <option value="UG">Uganda</option>
                               <option value="US">United States</option>
                               <option value="CA">Canada</option>
                               <option value="UK">United Kingdom</option>

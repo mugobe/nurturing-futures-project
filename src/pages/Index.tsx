@@ -29,7 +29,7 @@ const Index = () => {
               </h2>
               
               <p className="text-hope-50 mb-8">
-                Help us create brighter futures for children in need.
+                Help us create brighter futures for children in need. Your support can make a world of difference, ensuring that children have access to the resources they need to thrive.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">

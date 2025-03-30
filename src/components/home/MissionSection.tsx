@@ -57,7 +57,7 @@ const MissionSection = () => {
             </h2>
             
             <p className="text-gray-600 mb-8">
-              We deliver direct support to children and families, as well as engage in research, knowledge exchange, humanitarian responses, and advocacy. We collaborate with civil society organizations (CSOs) and government bodies aligned with our mission to ensure comprehensive support for vulnerable children and families.
+              Bright Horizons Initiative Limited is dedicated to improving the lives of underprivileged children in Uganda. We deliver direct support to children and families, engage in research, knowledge exchange, humanitarian responses, and advocacy. We collaborate with civil society organizations and government bodies to ensure comprehensive support for vulnerable children and families.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
@@ -65,22 +65,22 @@ const MissionSection = () => {
                 {
                   icon: Home,
                   title: 'Family Support',
-                  description: 'Preventing child-family separation through poverty alleviation and support programs.'
+                  description: 'Preventing child-family separation through poverty alleviation and family strengthening programs.'
                 },
                 {
                   icon: School,
                   title: 'Education Access',
-                  description: 'Ensuring children have access to quality education through partnerships with schools.'
+                  description: 'Ensuring children have access to quality education through partnerships with schools in marginalized areas.'
                 },
                 {
                   icon: Heart,
                   title: 'Healthcare',
-                  description: 'Providing access to essential health services and nutrition for vulnerable children.'
+                  description: 'Advocating for greater access to healthcare services and mental health support for vulnerable children.'
                 },
                 {
                   icon: Book,
                   title: 'Research & Advocacy',
-                  description: 'Conducting research and advocating for policies that protect vulnerable children.'
+                  description: 'Conducting research and advocating for policies that protect vulnerable children and promote family-based care.'
                 }
               ].map((item, index) => (
                 <div key={index} className="flex items-start">

@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
-            We intentionally improve and impact children's lives by providing care, education, and support to marginalized children, helping them build a path to a brighter future.
+            We intentionally improve and impact children's lives by providing care, education, and support to marginalized children in Uganda, helping them build a path to a brighter future.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
