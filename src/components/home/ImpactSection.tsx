@@ -62,7 +62,8 @@ const ImpactSection = () => {
                 <CardDescription>{item.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                {/* Empty content to satisfy the children requirement */}
+                {/* Adding children to satisfy the children requirement */}
+                <div></div>
               </CardContent>
             </Card>
           ))}

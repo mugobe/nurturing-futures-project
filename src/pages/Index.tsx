@@ -5,7 +5,6 @@ import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
 import MissionSection from '@/components/home/MissionSection';
 import ImpactSection from '@/components/home/ImpactSection';
-import CampaignSection from '@/components/home/CampaignSection';
 import BlogPreview from '@/components/home/BlogPreview';
 import { Heart, Mail, Users } from 'lucide-react';
 import Button from '@/components/shared/Button';
@@ -21,16 +20,16 @@ const Index = () => {
         <MissionSection />
         <ImpactSection />
         
-        {/* Call to Action Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-hope-600 to-hope-800 text-white">
+        {/* Call to Action Section - Simplified */}
+        <section className="py-16 md:py-20 bg-gradient-to-br from-hope-600 to-hope-800 text-white">
           <div className="container-custom text-center">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Join Us in Making a Difference
               </h2>
               
-              <p className="text-hope-50 mb-10 text-lg">
-                Whether through volunteering, donating, or spreading awareness, there are many ways you can help us create brighter futures for children in need.
+              <p className="text-hope-50 mb-8">
+                Help us create brighter futures for children in need.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -59,25 +58,11 @@ const Index = () => {
                     Volunteer
                   </Button>
                 </Link>
-                
-                <Link to="/contact">
-                  <Button 
-                    variant="ghost" 
-                    size="lg" 
-                    rounded 
-                    withIcon 
-                    className="w-full sm:w-auto text-white hover:bg-white/10"
-                  >
-                    <Mail size={18} className="mr-1.5" />
-                    Contact Us
-                  </Button>
-                </Link>
               </div>
             </div>
           </div>
         </section>
         
-        <CampaignSection />
         <BlogPreview />
       </main>
       
