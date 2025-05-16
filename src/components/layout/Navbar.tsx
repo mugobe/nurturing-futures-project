@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -28,11 +29,12 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
+  // Removed "Campaigns" from the navigation menu links
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Programs', path: '/programs' },
-    { name: 'Campaigns', path: '/campaigns' },
+    // { name: 'Campaigns', path: '/campaigns' }, // Removed as instructed
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
