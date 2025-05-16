@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -6,6 +5,7 @@ import Hero from '@/components/home/Hero';
 import MissionSection from '@/components/home/MissionSection';
 import ImpactSection from '@/components/home/ImpactSection';
 import BlogPreview from '@/components/home/BlogPreview';
+import ObjectivesSection from '@/components/home/ObjectivesSection';
 import { Heart, Mail, Users } from 'lucide-react';
 import Button from '@/components/shared/Button';
 import { Link } from 'react-router-dom';
@@ -18,6 +18,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <MissionSection />
+        <ObjectivesSection />
         <ImpactSection />
         
         {/* Call to Action Section - Simplified */}
