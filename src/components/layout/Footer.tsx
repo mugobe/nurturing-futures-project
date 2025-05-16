@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Mail, MapPin, Phone } from 'lucide-react';
@@ -16,11 +15,11 @@ const Footer = () => {
             <Link to="/" className="flex items-center space-x-2">
               <AnimatedIcon icon={Heart} size={24} color="#0da2e7" animation="pulse" />
               <span className="text-xl font-display font-bold bg-gradient-to-r from-hope-600 to-hope-800 text-transparent bg-clip-text">
-                BrightFutures
+                BHI
               </span>
             </Link>
             <p className="text-sm text-gray-600 mt-4 max-w-xs">
-              Dedicated to improving the lives of marginalized children through care, education, and community support.
+              Dedicated to improving the lives of marginalized children through care, education, and community support as Bright Horizons Initiative.
             </p>
           </div>
 
@@ -70,8 +69,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-hope-500" />
-                <a href="mailto:info@brightfutures.org" className="text-sm text-gray-600 hover:text-hope-600 transition-colors">
-                  info@brightfutures.org
+                <a href="mailto:info@bhinitiative.org" className="text-sm text-gray-600 hover:text-hope-600 transition-colors">
+                  info@bhinitiative.org
                 </a>
               </li>
             </ul>
@@ -105,7 +104,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-gray-500">
-            © {currentYear} BrightFutures. All rights reserved.
+            © {currentYear} Bright Horizons Initiative. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <a
